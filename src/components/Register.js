@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
+import {Helmet} from "react-helmet"
 
 const initState = {
 	username: "",
@@ -58,6 +59,12 @@ const initState = {
 
 	render(){
 		return (
+
+			<>
+
+<Helmet>
+        <title> Register </title>
+      </Helmet>
 			<div className="full-centered">
 				<div className = "jumbotron">
 					<h1 className="display-3">Registro</h1>
@@ -100,6 +107,9 @@ const initState = {
 					}
 				</div>
 			</div>
+
+			</>
+
 		);
 	}
 }

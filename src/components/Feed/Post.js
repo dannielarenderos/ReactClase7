@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from "prop-types"
 const Post = props => {
     return(
         <article className= "post card">
@@ -23,6 +23,15 @@ const Post = props => {
             </footer>
         </article>
     );
+}
+
+Post.propTypes = {
+	title: PropTypes.string,
+	name: PropTypes.string,
+	image: PropTypes.string,
+	onClick: PropTypes.func,
+	text: PropTypes.string,
+	number: PropTypes.number
 }
 
 export default Post;
